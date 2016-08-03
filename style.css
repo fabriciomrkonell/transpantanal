@@ -1,4 +1,3 @@
-
 body {
   padding-top: 70px;
   background-color: #F9F2F2;
@@ -44,6 +43,22 @@ body {
   color: #333;
 }
 
+.yellow {
+  color: #fcdb0c;
+}
+
 footer {
   margin-bottom: 10px;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+input {
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
 }

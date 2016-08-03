@@ -23,13 +23,78 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Contato</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="yellow">Contato</h2>
+          <hr>
+          <div class="row">
+            <div class="col-sm-12 contact-info">
+              <p><strong>Email</strong>: info@transpantanal.com.br</p>
+              <p><strong>Telefone</strong>: (47) 8895-7840</p>
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col-sm-6">
+              <form>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="glyphicon glyphicon-user"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Nome">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="glyphicon glyphicon-envelope"></i>
+                    </span>
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="glyphicon glyphicon-phone"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Telefone">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-default">Enviar mensagem</button>
+              </form>
+            </div>
+            <div class="col-sm-6">
+             <textarea class="form-control" rows="7" placeholder="Digite a sua mensagem..."></textarea>
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="map"></div>
+              <script>
+                function initMap() {
+                  var mapDiv = document.getElementById('map');
+                  var map = new google.maps.Map(mapDiv, {
+                      center: { lat: -26.4174233, lng: -49.0845512 },
+                      zoom: 13
+                  });
+                }
+              </script>
+              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGHqDT70ne89IMRqk0YC93a2s-fD1VYZA&callback=initMap"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container hide">
       <div class="row">
         <div class="col-md-12">
           <div class="row carousel-holder">
@@ -71,6 +136,26 @@
                 </div>
               </div>
             </div>
+            <div class="col-sm-4 col-lg-4 col-md-4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x150" alt="">
+                <div class="caption">
+                  <h4 class="pull-right">$24.99</h4>
+                  <h4><a href="#">First Product</a></h4>
+                  <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-md-4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/320x150" alt="">
+                <div class="caption">
+                  <h4 class="pull-right">$24.99</h4>
+                  <h4><a href="#">First Product</a></h4>
+                  <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -79,11 +164,13 @@
       <hr>
       <footer>
         <div class="row">
-          <div class="col-lg-12"><p>Copyright © Your Website 2014</p></div>
+          <div class="col-lg-12"><p>Transpantanal - (47) 3374-1154</p></div>
         </div>
       </footer>
     </div>
     <script src="jquery/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="angular/js/angular.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
