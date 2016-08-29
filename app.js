@@ -4,16 +4,16 @@ angular.module('appTranspantanal', ['ngRoute']);
 
 angular.module('appTranspantanal').config(function($routeProvider, $locationProvider){
 
-   $routeProvider.when('/', {
+   $routeProvider.when('/excursoes', {
       templateUrl: 'views/home.html',
       controller: 'HomeCtrl',
-   }).when('/sobre', {
+   }).when('/', {
       templateUrl: 'views/sobre.html',
       controller: 'SobreCtrl',
    }).when('/contato', {
       templateUrl: 'views/contato.html',
       controller: 'ContatoCtrl',
-   }).otherwise ({ redirectTo: '/' });
+   }).otherwise ({ redirectTo: '/sobre' });
 });
 
 angular.module('appTranspantanal').controller('HomeCtrl', function($rootScope, $location){
